@@ -8,21 +8,20 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
-    Button mBtnNavigate3;
+    Button mBtnNavigate1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        Log.d("BBB","onCreate Main2");
-        mBtnNavigate3 = findViewById(R.id.buttonNavigateScreen3);
+        setContentView(R.layout.activity_main3);
+        Log.d("BBB","onCreate Main3");
 
-
-        mBtnNavigate3.setOnClickListener(new View.OnClickListener() {
+        mBtnNavigate1 = findViewById(R.id.buttonNavigateScreen1);
+        mBtnNavigate1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
+                Intent intent = new Intent(MainActivity3.this,MainActivity3.class);
                 startActivity(intent);
             }
         });
@@ -30,36 +29,36 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("BBB","onStart Main2");
+        Log.d("BBB","onStart Main3");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d("BBB","onResume Main2");
+        Log.d("BBB","onResume Main3");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d("BBB","onPause Main2");
+        Log.d("BBB","onPause Main3");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("BBB","onStop Main2");
+        Log.d("BBB","onStop Main3");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d("BBB","onRestart Main2");
+        Log.d("BBB","onRestart Main3");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("BBB","onDestroy Main2");
+        Log.d("BBB","onDestroy Main3");
     }
 }
