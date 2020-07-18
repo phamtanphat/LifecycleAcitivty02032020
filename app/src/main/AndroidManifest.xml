@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:launchMode="singleTop"
-            android:name=".MainActivity3"></activity>
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
+            android:name=".MainActivity3">
+        </activity>
+        <activity
+            android:name=".MainActivity2" />
+        <activity
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
